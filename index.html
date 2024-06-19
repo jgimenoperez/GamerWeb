@@ -1,707 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fuentes  -->
-    <link
-      href="assets/fonts/fontawesome-free-6.1.2-web/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/fonts/montserrat/monserrat.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Fuentes  -->
+  <link href="assets/fonts/fontawesome-free-6.1.2-web/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/fonts/montserrat/monserrat.css" />
 
-    <!-- JavaScript -->
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Document</title>
-  </head>
+  <!-- JavaScript -->
 
-  <body>
-    <!-- Barra superior decorativa -->
-    <div class="decoration-bar"></div>
+  <title>Document</title>
+</head>
 
-    <!-- Estructura principal -->
-    <div class="layout">
-      <!-- Cabecera -->
-      <header class="layout_header">
-        <div class="header_title">
-          <a href="" class="header_link">
-            <img src="assets/img/logo1.png" alt="logo" class="header_img" />
-          </a>
-        </div>
-      </header>
+<body>
+  <!-- Barra superior decorativa -->
+  <div class="decoration-bar"></div>
 
-      <!-- Navegacion -->
-      <div class="layout__nav">
-        <section class="nav__navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">NOTICIAS</a>
-              <div class="navbar__submenu">
-                <ul class="navbaR__sublist">
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">Videojuegos</a>
-                  </li>
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">Novedades</a>
-                  </li>
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">Otros</a>
-                    <ul class="sublist__dropdown">
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Cine</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Tecnologia</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <!-- Carrusel imagenes  -->
-                <div class="submenu__carrousel">
-                  <ul class="carousel__menu carousel__menu--small">
-                    <!-- Elementos carousel -->
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-1.jpg"
-                          alt="img1"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">9</span>
-                          </div>
-                        </div>
-                      </div>
+  <!-- Estructura principal -->
+  <div class="layout">
+    <!-- Cabecera -->
+    <header class="layout_header">
+      <div class="header_title">
+        <a href="" class="header_link">
+          <img src="assets/img/logo1.png" alt="logo" class="header_img" />
+        </a>
+      </div>
+    </header>
 
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            ¿Battlefield 2042 es el mejor de la saga?
-                          </a>
-                        </h3>
-                      </div>
+    <!-- Navegacion -->
+    <div class="layout__nav">
+      <section class="nav__navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">NOTICIAS</a>
+            <div class="navbar__submenu">
+              <ul class="navbaR__sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">Videojuegos</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">Novedades</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">Otros</a>
+                  <ul class="sublist__dropdown">
+                    <li class="dropdown__item">
+                      <a href="#" class="dropdown__link">Cine</a>
                     </li>
-
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-2.webp"
-                          alt="img1"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">9</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            ¿Elden ring es el mejor juego del año?
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-3.jpg"
-                          alt="img1"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">9</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            ¿The last of us remake es mejor que el original??
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-4.jpg"
-                          alt="img1"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">9</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Review de Dying Light 2
-                          </a>
-                        </h3>
-                      </div>
+                    <li class="dropdown__item">
+                      <a href="#" class="dropdown__link">Tecnologia</a>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">ANALISIS</a>
-              <div class="navbar__submenu">
-                <div class="submenu__carousel">
-                  <ul class="carosuel__menu">
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-5 (1).jpg"
-                          alt="img5"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">7.5</span>
-                          </div>
+                </li>
+              </ul>
+              <!-- Carrusel imagenes  -->
+              <div class="submenu__carrousel">
+                <ul class="carousel__menu carousel__menu--small">
+                  <!-- Elementos carousel -->
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-1.jpg" alt="img1" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">9</span>
                         </div>
                       </div>
+                    </div>
 
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Sifu es el juego de peleas más dificil
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-6.jpg"
-                          alt="img6"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">6</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link"> Trailer FC24 </a>
-                        </h3>
-                      </div>
-                    </li>
-
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-7.png"
-                          alt="img7"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark">8</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            ¿Multiversus es mejor que Super Smash Bros?
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-8.jpg"
-                          alt="img8"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark"></span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link"> Turismo 7 </a>
-                        </h3>
-                      </div>
-                    </li>
-
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-9.webp"
-                          alt="img9"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div class="carousel__container-raiting">
-                        <div class="container-raiting__circle">
-                          <div class="container-raiting__border">
-                            <span class="container-raiting__mark"></span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Detalles alucionantes de Forza horizon 5
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">JUEGOS</a>
-
-              <div class="navbar_submenu">
-                <div class="submenu__carousel">
-                  <ul class="carosuel__menu">
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-10.jpg"
-                          alt="img5"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Review Rache an Clank
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-19.jpg"
-                          alt="img6"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Valorant es mejor que CSGO
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-11.jpg"
-                          alt="img7"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Farcry 6 es el mejor de la saga
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-12.jpg"
-                          alt="img8"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Gameplay de Residente Evil Village
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-13.jpg"
-                          alt="img9"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Its take two fué el mejor juego del años
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">CATEGORIAS</a>
-              <div class="nabar__submenu navbar__submenu--small">
-                <ul class="navbar__sublist">
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">Acción</a>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          ¿Battlefield 2042 es el mejor de la saga?
+                        </a>
+                      </h3>
+                    </div>
                   </li>
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">SandBox</a>
-                    <ul class="sublist__dropdown">
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Aventuras</a>
-                      </li>
-                      <li class="dropdown__item">
-                        <a href="#" class="dropdown__link">Conducción</a>
-                      </li>
-                    </ul>
+
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-2.webp" alt="img1" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">9</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          ¿Elden ring es el mejor juego del año?
+                        </a>
+                      </h3>
+                    </div>
                   </li>
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">Lucha</a>
+
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-3.jpg" alt="img1" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">9</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          ¿The last of us remake es mejor que el original??
+                        </a>
+                      </h3>
+                    </div>
                   </li>
-                  <li class="sublist__item">
-                    <a href="#" class="sublist__link">Carreras</a>
+
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-4.jpg" alt="img1" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">9</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Review de Dying Light 2
+                        </a>
+                      </h3>
+                    </div>
                   </li>
                 </ul>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">RANKING</a>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">ANALISIS</a>
+            <div class="navbar__submenu">
+              <div class="submenu__carousel">
+                <ul class="carosuel__menu">
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-5 (1).jpg" alt="img5" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">7.5</span>
+                        </div>
+                      </div>
+                    </div>
 
-              <div class="navbar_submenu">
-                <div class="submenu__carousel">
-                  <ul class="carosuel__menu">
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-14.jpg"
-                          alt="img14"
-                          class="carousel__img"
-                        />
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Sifu es el juego de peleas más dificil
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-6.jpg" alt="img6" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">6</span>
+                        </div>
                       </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Trailer BioMutant
-                          </a>
-                        </h3>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link"> Trailer FC24 </a>
+                      </h3>
+                    </div>
+                  </li>
+
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-7.png" alt="img7" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark">8</span>
+                        </div>
                       </div>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          ¿Multiversus es mejor que Super Smash Bros?
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-8.jpg" alt="img8" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link"> Turismo 7 </a>
+                      </h3>
+                    </div>
+                  </li>
+
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-9.webp" alt="img9" class="carousel__img" />
+                    </div>
+                    <div class="carousel__container-raiting">
+                      <div class="container-raiting__circle">
+                        <div class="container-raiting__border">
+                          <span class="container-raiting__mark"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Detalles alucionantes de Forza horizon 5
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">JUEGOS</a>
+
+            <div class="navbar_submenu">
+              <div class="submenu__carousel">
+                <ul class="carosuel__menu">
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-10.jpg" alt="img5" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Review Rache an Clank
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-19.jpg" alt="img6" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Valorant es mejor que CSGO
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-11.jpg" alt="img7" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Farcry 6 es el mejor de la saga
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-12.jpg" alt="img8" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Gameplay de Residente Evil Village
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-13.jpg" alt="img9" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Its take two fué el mejor juego del años
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">CATEGORIAS</a>
+            <div class="nabar__submenu navbar__submenu--small">
+              <ul class="navbar__sublist">
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">Acción</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">SandBox</a>
+                  <ul class="sublist__dropdown">
+                    <li class="dropdown__item">
+                      <a href="#" class="dropdown__link">Aventuras</a>
                     </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-15.jpg"
-                          alt="img15"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            analisis Little Nightmare
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-16.jpg"
-                          alt="img7"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Gameplay WWE 2k24
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-17.jpg"
-                          alt="img17"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Red Dead Redemption 2 - El mejor juego de la
-                            historia
-                          </a>
-                        </h3>
-                      </div>
-                    </li>
-                    <li class="carousel__item">
-                      <div class="carousel__container-img">
-                        <img
-                          src="assets/img/game-18.jpg"
-                          alt="img18"
-                          class="carousel__img"
-                        />
-                      </div>
-                      <div carousel__detail>
-                        <h3 class="carousel__tittle">
-                          <a href="#" class="carousel__link">
-                            Trailers Riders Republic
-                          </a>
-                        </h3>
-                      </div>
+                    <li class="dropdown__item">
+                      <a href="#" class="dropdown__link">Conducción</a>
                     </li>
                   </ul>
-                </div>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">Lucha</a>
+                </li>
+                <li class="sublist__item">
+                  <a href="#" class="sublist__link">Carreras</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">RANKING</a>
+
+            <div class="navbar_submenu">
+              <div class="submenu__carousel">
+                <ul class="carosuel__menu">
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-14.jpg" alt="img14" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Trailer BioMutant
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-15.jpg" alt="img15" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          analisis Little Nightmare
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-16.jpg" alt="img7" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Gameplay WWE 2k24
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-17.jpg" alt="img17" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Red Dead Redemption 2 - El mejor juego de la
+                          historia
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                  <li class="carousel__item">
+                    <div class="carousel__container-img">
+                      <img src="assets/img/game-18.jpg" alt="img18" class="carousel__img" />
+                    </div>
+                    <div carousel__detail>
+                      <h3 class="carousel__tittle">
+                        <a href="#" class="carousel__link">
+                          Trailers Riders Republic
+                        </a>
+                      </h3>
+                    </div>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </li>
+        </ul>
+        <form action="" class="navbar__search">
+          <input type="text" class="search__input" name="search" placeholder="Buscar" />
+
+          <div class="navbar_btn-search">
+            <a href="#" class="navbar_button"></a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
+      </section>
+
+      <!-- Maquesina -->
+      <section class="layout_marquee">
+        <h3 class="marquee_header">No te lo pierdas</h3>
+        <div class="marquee_container">
+          <ul class="marquee__list">
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">La nueva PS5</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">The Last of Us 1 remake</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Analisis Elden Ring</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Trailer FC24</a>
+              </h4>
+            </li>
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Analisis GTA 6</a>
+              </h4>
+            </li>
+
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Analisis UFC 4</a>
+              </h4>
+            </li>
+
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Gameplay Forza Horizon 5</a>
+              </h4>
+            </li>
+
+            <li class="marquee__item">
+              <h4 class="marquee__title">
+                <a href="#" class="marquee__link">Goty Its Take Two</a>
+              </h4>
             </li>
           </ul>
-          <form action="" class="navbar__search">
-            <input
-              type="text"
-              class="search__input"
-              name="search"
-              placeholder="Buscar"
-            />
+        </div>
+      </section>
 
-            <div class="navbar_btn-search">
-              <a href="#" class="navbar_button"></a>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </form>
-        </section>
+      <!-- Slider -->
+      <section class="layout__slider">
+        <articles class="slider__container slider__container--slider1">
+          <a href="#" class="slider__link">
+            <img src="assets/img/slider-1.jpg" alt="slider1" class="slider__img" />
+          </a>
 
-        <!-- Maquesina -->
-        <section class="layout_marquee">
-          <h3 class="marquee_header">No te lo pierdas</h3>
-          <div class="marquee_container">
-            <ul class="marquee__list">
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">La nueva PS5</a>
-                </h4>
-              </li>
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">The Last of Us 1 remake</a>
-                </h4>
-              </li>
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">Analisis Elden Ring</a>
-                </h4>
-              </li>
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">Trailer FC24</a>
-                </h4>
-              </li>
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">Analisis GTA 6</a>
-                </h4>
-              </li>
-
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">Analisis UFC 4</a>
-                </h4>
-              </li>
-
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">Gameplay Forza Horizon 5</a>
-                </h4>
-              </li>
-
-              <li class="marquee__item">
-                <h4 class="marquee__title">
-                  <a href="#" class="marquee__link">Goty Its Take Two</a>
-                </h4>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Slider -->
-        <section class="layout__slider">
-          <articles class="slider__container slider__container--slider1">
-            <a href="#" class="slider__link">
-              <img
-                src="assets/img/slider-1.jpg"
-                alt="slider1"
-                class="slider__img"
-              />
-            </a>
-
-            <div class="slider_info">
-              <a href="#" class="slider_category"> JUEGOS </a>
-              <div class="slider__line"></div>
-              <h2 class="slider_title">
-                <a href="#" class="slider__link-title"> Mejores juegos 2024 </a>
-              </h2>
-              <div class="slider_rating">
-                <div class="ratin__circle">
-                  <div class="rating__border">
-                    <span class="rating__mark">6</span>
-                  </div>
+          <div class="slider_info">
+            <a href="#" class="slider_category"> JUEGOS </a>
+            <div class="slider__line"></div>
+            <h2 class="slider_title">
+              <a href="#" class="slider__link-title"> Mejores juegos 2024 </a>
+            </h2>
+            <div class="slider_rating">
+              <div class="ratin__circle">
+                <div class="rating__border">
+                  <span class="rating__mark">6</span>
                 </div>
               </div>
             </div>
-          </articles>
+          </div>
+        </articles>
 
-          <articles class="slider__container slider__container--slider1">
-            <a href="#" class="slider__link">
-              <img
-                src="assets/img/slider-2.jpg"
-                alt="slider2"
-                class="slider__img"
-              />
-            </a>
+        <articles class="slider__container slider__container--slider1">
+          <a href="#" class="slider__link">
+            <img src="assets/img/slider-2.jpg" alt="slider2" class="slider__img" />
+          </a>
 
-            <div class="slider_info">
-              <a href="#" class="slider_category"> JUEGOS </a>
-              <div class="slider__line"></div>
-              <h2 class="slider_title">
-                <a href="#" class="slider__link-title">
-                  Review The Last of Us Remake
-                </a>
-              </h2>
-            </div>
-          </articles>
+          <div class="slider_info">
+            <a href="#" class="slider_category"> JUEGOS </a>
+            <div class="slider__line"></div>
+            <h2 class="slider_title">
+              <a href="#" class="slider__link-title">
+                Review The Last of Us Remake
+              </a>
+            </h2>
+          </div>
+        </articles>
 
-          <articles class="slider__container slider__container--slider1">
-            <a href="#" class="slider__link">
-              <img
-                src="assets/img/slider-3.jpeg"
-                alt="slider3"
-                class="slider__img"
-              />
-            </a>
+        <articles class="slider__container slider__container--slider1">
+          <a href="#" class="slider__link">
+            <img src="assets/img/slider-3.jpeg" alt="slider3" class="slider__img" />
+          </a>
 
-            <div class="slider_info">
-              <a href="#" class="slider_category"> JUEGOS </a>
-              <div class="slider__line"></div>
-              <h2 class="slider_title">
-                <a href="#" class="slider__link-title">
-                  Microsoft compra Activisón
-                </a>
-              </h2>
-            </div>
-          </articles>
+          <div class="slider_info">
+            <a href="#" class="slider_category"> JUEGOS </a>
+            <div class="slider__line"></div>
+            <h2 class="slider_title">
+              <a href="#" class="slider__link-title">
+                Microsoft compra Activisón
+              </a>
+            </h2>
+          </div>
+        </articles>
 
-          <articles class="slider__container slider__container--slider1">
-            <a href="#" class="slider__link">
-              <img
-                src="assets/img/slider-4.jpg"
-                alt="slider1"
-                class="slider__img"
-              />
-            </a>
+        <articles class="slider__container slider__container--slider1">
+          <a href="#" class="slider__link">
+            <img src="assets/img/slider-4.jpg" alt="slider1" class="slider__img" />
+          </a>
 
-            <div class="slider_info">
-              <a href="#" class="slider_category"> JUEGOS </a>
-              <div class="slider__line"></div>
-              <h2 class="slider_title">
-                <a href="#" class="slider__link-title">
-                  Review Battelfield 2042
-                </a>
-              </h2>
-            </div>
-          </articles>
+          <div class="slider_info">
+            <a href="#" class="slider_category"> JUEGOS </a>
+            <div class="slider__line"></div>
+            <h2 class="slider_title">
+              <a href="#" class="slider__link-title">
+                Review Battelfield 2042
+              </a>
+            </h2>
+          </div>
+        </articles>
 
-          <articles class="slider__container slider__container--slider1">
-            <a href="#" class="slider__link">
-              <img
-                src="assets/img/slider-5.png"
-                alt="slider5"
-                class="slider__img"
-              />
-            </a>
+        <articles class="slider__container slider__container--slider1">
+          <a href="#" class="slider__link">
+            <img src="assets/img/slider-5.png" alt="slider5" class="slider__img" />
+          </a>
 
-            <div class="slider_info">
-              <a href="#" class="slider_category"> JUEGOS </a>
-              <div class="slider__line"></div>
-              <h2 class="slider_title">
-                <a href="#" class="slider__link-title">
-                  Mejores skins valorant
-                </a>
-              </h2>
-            </div>
-          </articles>
-        </section>
+          <div class="slider_info">
+            <a href="#" class="slider_category"> JUEGOS </a>
+            <div class="slider__line"></div>
+            <h2 class="slider_title">
+              <a href="#" class="slider__link-title">
+                Mejores skins valorant
+              </a>
+            </h2>
+          </div>
+        </articles>
+      </section>
 
-        <!-- Higlights -->
-        <section class="layout__higlights">
-          <header class="highlights__subheader">
-            <h3 class="subheader__title">
-              Mejores momentos de los videojuegos
-            </h3>
-          </header>
-        </section>
-
+      <!-- Higlights -->
+      <section class="layout__higlights">
+        <header class="highlights__subheader">
+          <h3 class="subheader__title">
+            Mejores momentos de los videojuegos
+          </h3>
+        </header>
         <div class="higlights_post">
           <article class="highlights__post">
             <div class="highlights__image">
               <a href="#" class="highlights__link">
-                <img
-                  class="highlights__img"
-                  src="assets/img/highlight-2.jpg"
-                  alt="highlight2"
-                />
+                <img class="highlights__img" src="assets/img/highlight-2.jpg" alt="highlight2" />
               </a>
               <div class="hightlights__category">
                 <a href="#" class="hightlights__name-category">Juegos</a>
@@ -710,9 +601,7 @@
 
             <div class="highlights__detail">
               <h3 class="highligts__title">
-                <a href="#" class="highlights__link"
-                  >Mejor juego de todos los tiempos</a
-                >
+                <a href="#" class="highlights__link">Mejor juego de todos los tiempos</a>
               </h3>
             </div>
 
@@ -742,7 +631,7 @@
               </div>
 
               <div class="footer-post__read-more">
-                    <a href="#" class="read-more__bten">Leer más</a>
+                <a href="#" class="read-more__bten">Leer más</a>
               </div>
             </footer>
           </article>
@@ -750,11 +639,7 @@
           <article class="highlights__post">
             <div class="highlights__image">
               <a href="#" class="highlights__link">
-                <img
-                  class="highlights__img"
-                  src="assets/img/highlight-1.jpg"
-                  alt="highlight2"
-                />
+                <img class="highlights__img" src="assets/img/highlight-1.jpg" alt="highlight2" />
               </a>
               <div class="hightlights__category">
                 <a href="#" class="hightlights__name-category">Juegos</a>
@@ -763,9 +648,7 @@
 
             <div class="highlights__detail">
               <h3 class="highligts__title">
-                <a href="#" class="highlights__link"
-                  >God of wars - El verdadero nombre de Atreus</a
-                >
+                <a href="#" class="highlights__link">God of wars - El verdadero nombre de Atreus</a>
               </h3>
             </div>
 
@@ -795,69 +678,215 @@
               </div>
 
               <div class="footer-post__read-more">
-                    <a href="#" class="read-more__bten">Leer más</a>
-              </div>
-            </footer>
-          </article>        
-          
-          <article class="highlights__post">
-            <div class="highlights__image">
-              <a href="#" class="highlights__link">
-                <img
-                  class="highlights__img"
-                  src="assets/img/highlight-3.jpg"
-                  alt="highlight2"
-                />
-              </a>
-              <div class="hightlights__category">
-                <a href="#" class="hightlights__name-category">Juegos</a>
-              </div>
-            </div>
-
-            <div class="highlights__detail">
-              <h3 class="highligts__title">
-                <a href="#" class="highlights__link"
-                  >Final - The last of us</a
-                >
-              </h3>
-            </div>
-
-            <div class="highlights__meta">
-              <a href="#" class="highlights__author">Chan</a>
-              <span class="highlihts_date">Junio 2024</span>
-            </div>
-
-            <p class="highlights__description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo dolore voluptatum corporis, quasi fugiat reprehenderit
-              ullam aperiam libero architecto id! Pariatur voluptatem alias
-              repudiandae necessitatibus at corporis saepe tempore a!
-            </p>
-
-            <footer class="highlights__footer-post">
-              <div class="footer-post__container">
-                <div class="footer-post__views">
-                  <i class="fa-solid fa-eye"></i>
-                  <span>1720</span>
-                </div>
-
-                <div class="footer-post__comment">
-                  <i class="fa-solid fa-comment"></i>
-                  <a href="#" class="comments__nuimber">5</a>
-                </div>
-              </div>
-
-              <div class="footer-post__read-more">
-                    <a href="#" class="read-more__bten">Leer más</a>
+                <a href="#" class="read-more__bten">Leer más</a>
               </div>
             </footer>
           </article>
-          
+
+          <article class="highlights__post">
+            <div class="highlights__image">
+              <a href="#" class="highlights__link">
+                <img class="highlights__img" src="assets/img/highlight-3.jpg" alt="highlight2" />
+              </a>
+              <div class="hightlights__category">
+                <a href="#" class="hightlights__name-category">Juegos</a>
+              </div>
+            </div>
+
+            <div class="highlights__detail">
+              <h3 class="highligts__title">
+                <a href="#" class="highlights__link">Final - The last of us</a>
+              </h3>
+            </div>
+
+            <div class="highlights__meta">
+              <a href="#" class="highlights__author">Chan</a>
+              <span class="highlihts_date">Junio 2024</span>
+            </div>
+
+            <p class="highlights__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Explicabo dolore voluptatum corporis, quasi fugiat reprehenderit
+              ullam aperiam libero architecto id! Pariatur voluptatem alias
+              repudiandae necessitatibus at corporis saepe tempore a!
+            </p>
+
+            <footer class="highlights__footer-post">
+              <div class="footer-post__container">
+                <div class="footer-post__views">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>1720</span>
+                </div>
+
+                <div class="footer-post__comment">
+                  <i class="fa-solid fa-comment"></i>
+                  <a href="#" class="comments__nuimber">5</a>
+                </div>
+              </div>
+
+              <div class="footer-post__read-more">
+                <a href="#" class="read-more__bten">Leer más</a>
+              </div>
+            </footer>
+          </article>
+
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Pie de pagina -->
-    <footer class="footer"></footer>
-  </body>
+      <!-- Últimos videos -->
+      <section class="layout__videso">
+        <header class="videos__subheader">
+          <h3 class="subheader__title">
+            Últimos videos
+          </h3>
+
+          <div class="videos__container">
+            <div class="videos__main">
+              <div class="main_yt-video">
+                <iframe src="https://www.youtube.com/embed/yyGetSp7CIc"
+                  title="The Last of Us | Tráiler oficial | Español subtitulado | HBO Max" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="main-video__detail">
+                  <h3 class="main-video__title">
+                    Trailer The Last of Us 1 Remake
+                  </h3>
+                </div>
+
+                <div class="main-video__info">
+                  <div class="main-video__info-container">
+                    <a href="#" class="main-video__autor">Sony España</a>
+                    <div class="main-video__views">
+                      <i class="fa-solid fa-eye"></i>
+                      <span class="main-video__number">4500</span>
+                    </div>
+
+                    <div class="main-video__comments">
+                      <i class="fa-solid fa-comment"></i>
+                      <a href="#" class="main-video__number">20</a>
+
+                    </div>
+                  </div>
+
+                  <span class="main-video__date">
+                    Junio 19, 2024
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="videos__list">
+              <article class="videos__item">
+
+                <div class="video__detail">
+                  <h4 class="videos__title">
+                    <a href="#" class="videos__link">Top 10 mejores juegos de 2024</a>
+                  </h4>
+
+                  <div class="video__info">
+                    <a href="#" class="video_author">Eurogammer</a>
+                  </div>
+
+                  <span class="video__date">
+                    Junio 29, 2024
+                  </span>
+                </div>
+
+                <div class="video__image">
+                    <a href="" class="video__image-link">
+                        <img src="assets/img/latest-video-1.jpeg" alt="" class="video_img">
+                    </a>
+                </div>
+
+              </article>
+
+              <article class="videos__item">
+
+                <div class="video__detail">
+                  <h4 class="videos__title">
+                    <a href="#" class="videos__link">Trailer FC24</a>
+                  </h4>
+
+                  <div class="video__info">
+                    <a href="#" class="video_author">Vandal</a>
+                  </div>
+
+                  <span class="video__date">
+                    Junio 29, 2024
+                  </span>
+                </div>
+
+                <div class="video__image">
+                    <a href="" class="video__image-link">
+                        <img src="assets/img/latest-video-2.png" alt="" class="video_img">
+                    </a>
+                </div>
+
+              </article>
+
+              <article class="videos__item">
+
+                <div class="video__detail">
+                  <h4 class="videos__title">
+                    <a href="#" class="videos__link">Trailer Elden Ring</a>
+                  </h4>
+
+                  <div class="video__info">
+                    <a href="#" class="video_author">3D Juegos</a>
+                  </div>
+
+                  <span class="video__date">
+                    Junio 29, 2024
+                  </span>
+                </div>
+
+                <div class="video__image">
+                    <a href="" class="video__image-link">
+                        <img src="assets/img/latest-video-2.webp" alt="" class="video_img">
+                    </a>
+                </div>
+
+              </article>
+
+              <article class="videos__item">
+
+                <div class="video__detail">
+                  <h4 class="videos__title">
+                    <a href="#" class="videos__link">Trailer Howarts Legayd</a>
+                  </h4>
+
+                  <div class="video__info">
+                    <a href="#" class="video_author">Sassesion</a>
+                  </div>
+
+                  <span class="video__date">
+                    Junio 29, 2024
+                  </span>
+                </div>
+
+                <div class="video__image">
+                    <a href="" class="video__image-link">
+                        <img src="assets/img/latest-video-4.webp" alt="" class="video_img">
+                    </a>
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+
+        </header>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Pie de pagina -->
+  <footer class="footer"></footer>
+</body>
+
 </html>
