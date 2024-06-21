@@ -35,11 +35,52 @@ body {
         "slider slider"
         "hig hig"
         "videos videos"
-        "carousel carousel"
+        "carousel aside"
         "main aside"
     ;
     grid-template-columns: 70% 30%;
     width: 55vw;
     min-width: 100rem;
     margin :0 auto;
+
+}
+
+/* Estilos header cabecera */
+.layout_header{
+    grid-area: header;
+}
+
+/* Estilos navegacion NAV*/
+.layout__nav{
+    grid-area: nav;
+}
+
+/* Estilos marquesina */
+.layout_marquee{
+    grid-area: marquee;
+}
+
+/* Estilos slider */
+.layout__slider{
+  grid-area:hig;  
+}
+
+/* Estilos videos */
+.layout__videos{
+    grid-area:videos;
+}
+
+/* Estilos carousel */
+.layout__carousel-games{
+    grid-area: carousel
+}
+
+/* Estilos contenido principal main */
+.layout__main{
+    grid-area:main;
+}
+
+/* Estilos barra lateral aside */
+.layout__aside {
+    grid-area:aside;
 }
