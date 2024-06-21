@@ -19,3 +19,27 @@ body {
     font-size: 1.6rem;
     background-color: var(--color-principal);
 }
+
+.decoration-bar{
+    width: 100%;
+    background-color: var(--color-secondary);
+    height: 2.5rem;
+}
+
+.layout{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "marquee marquee"
+        "slider slider"
+        "hig hig"
+        "videos videos"
+        "carousel carousel"
+        "main aside"
+    ;
+    grid-template-columns: 70% 30%;
+    width: 55vw;
+    min-width: 100rem;
+    margin :0 auto;
+}
