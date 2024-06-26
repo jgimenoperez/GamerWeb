@@ -35,9 +35,8 @@ body {
         "slider slider"
         "hig hig"
         "videos videos"
-        "carousel aside"
-        "main aside"
-    ;
+        "carousel carousel"
+        "main aside";
     grid-template-columns: 70% 30%;
     width: 55vw;
     min-width: 100rem;
@@ -62,8 +61,14 @@ body {
 
 /* Estilos slider */
 .layout__slider{
-  grid-area:hig;  
+  grid-area:slider;  
 }
+
+/* Estilos hig */
+.layout__hig{
+    grid-area:hig;  
+  }
+  
 
 /* Estilos videos */
 .layout__videos{
@@ -78,9 +83,11 @@ body {
 /* Estilos contenido principal main */
 .layout__main{
     grid-area:main;
+    background-color: blue;
 }
 
 /* Estilos barra lateral aside */
 .layout__aside {
     grid-area:aside;
+    background-color: red;
 }
