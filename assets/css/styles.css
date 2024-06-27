@@ -3,6 +3,7 @@
 :root{
     --color-principal: #ffff;
     --color-secondary: #329153;
+    --color-bg-navar: #333946;
 
 }
 
@@ -47,11 +48,38 @@ body {
 /* Estilos header cabecera */
 .layout_header{
     grid-area: header;
+    width: 100%;
+    min-width:100%;
+    padding: 2rem 0;
+}
+
+.header__img{
+    width: 17rem;
 }
 
 /* Estilos navegacion NAV*/
 .layout__nav{
     grid-area: nav;
+    position: relative;
+    width:100%;
+}
+
+.nav__navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+    min-height:5rem;
+    max-height:5rem;
+    width: 100%;
+    color:var(--color-principal);
+    background-color:  var(--color-bg-navar)  ;
+    
+}
+
+.navbar__submenu{
+    display:none;
 }
 
 /* Estilos marquesina */
@@ -83,11 +111,9 @@ body {
 /* Estilos contenido principal main */
 .layout__main{
     grid-area:main;
-    background-color: blue;
 }
 
 /* Estilos barra lateral aside */
 .layout__aside {
     grid-area:aside;
-    background-color: red;
 }
