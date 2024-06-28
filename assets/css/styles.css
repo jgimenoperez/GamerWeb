@@ -78,6 +78,28 @@ body {
     
 }
 
+.navbar__list{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.navbar__item{
+    height:5rem
+}
+
+.navbar__link{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1.5rem  1.5rem;
+    color: var(--color-principal)
+}
+
+
+.navbar__item:hover{
+    background-color: var(--color-secondary)
+}
+
 .navbar__submenu{
     display:none;
 }
