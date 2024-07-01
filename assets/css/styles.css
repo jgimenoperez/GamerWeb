@@ -183,6 +183,7 @@ body {
 .navbar__sublist{
     display: inline-block;
     padding: 1rem;
+    width: 25%;
 }
 
 .sublist__item{
@@ -281,6 +282,16 @@ body {
     width: 4.8rem;
     height: 4.8rem;
     transform: translateX(-50%);
+}
+.carousel__link{
+    color:var(--color-principal);
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 3px black;
+    transition: all 3ms;
+    background-color: var(--color-hover-sublist-item);
+}
+.carousel__tittle:hover > .carousel__link{
+    background-color:var(--color-secondary)
 }
 
 .container-raiting__circle{
