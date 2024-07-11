@@ -531,7 +531,6 @@ body {
 
 .highlights__post{
     height: 100%;
-    border-bottom:122px solid var(--color-text-marquee);
 }
 
 .highlights__image{
@@ -621,6 +620,7 @@ body {
     margin-bottom: 1rem;
 }
 
+
 .footer-post__container{
     display: flex;
     flex-direction: row;
@@ -661,7 +661,37 @@ body {
 /* Estilos videos */
 .layout__videos{
     grid-area:videos;
+    width: 100%;
 }
+
+.videos__container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.videos__main{
+    flex-basis: 65%;
+    padding-bottom: 3rem;
+}
+
+.main_yt-video{
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+}
+
+.main_yt-video > iframe{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.main-video__detail{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
 
 /* Estilos carousel */
 .layout__carousel-games{
