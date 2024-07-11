@@ -615,6 +615,49 @@ body {
     margin-bottom: 1rem;
 }
 
+.highlights__footer-post{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.footer-post__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-basis: 20%;
+    gap: 1rem;
+}
+
+.footer-post__views, 
+.footer-post__comments{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 1.1rem;
+    columns: var(--color-text-marquee);
+}
+
+.footer-post__read-more{
+    border: 1px solid var(--color-text-marquee);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.footer-post__read-more:hover{
+    border: 1px solid var(--color-secondary);
+    color:var(--color-secondary)
+}
+
+.fa-solid{
+   margin-right: 0.5rem; 
+   font-size: 1.2rem;
+}
+
 /* Estilos videos */
 .layout__videos{
     grid-area:videos;
