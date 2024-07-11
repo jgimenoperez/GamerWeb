@@ -44,6 +44,7 @@ body {
         "carousel carousel"
         "main aside";
     grid-template-columns: 70% 30%;
+
     width: 55vw;
     min-width: 100rem;
     margin :0 auto;
@@ -485,6 +486,7 @@ body {
 /* Estilos hig */
 .layout__higlights{
     grid-area:hig;  
+    width: 100%;
     margin-bottom: 3rem;
   }
 
@@ -681,7 +683,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .videos__main{
@@ -790,3 +792,5 @@ body {
 .layout__aside {
     grid-area:aside;
 }
+
+
