@@ -513,7 +513,6 @@ body {
 }
 
 .subheader__title,
-.news__title,
 .list-header__title,
 .last-reviews__link-title
 .list-header__title,
@@ -538,7 +537,8 @@ body {
 .highlights__author,
 .main-video__autor,
 .main-video__autor,
-.main-post__author{
+.main-post__author,
+.news__author{
     font-weight: 500;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -562,7 +562,8 @@ body {
     transform: scale(1.1);
 }
 
-.hightlights__category{
+.hightlights__category,
+.game__category{
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -572,11 +573,13 @@ body {
     transition: all 300ms ease;
 }
 
-.hightlights__category:hover{
+.hightlights__category:hover,
+.game__category:hover{
     background-color: var(--color-bg-navar);
 }
 
-.hightlights__name-category{
+.hightlights__name-category
+.game__category{
     font-weight: 400;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -619,7 +622,8 @@ body {
 .highlihts_date,
 .main-video__date,
 .main-video__date,
-.main-post__date{
+.main-post__date,
+.news_date{
     font-weight: 400;
     color: var(--color-secondary);
     font-size: 1.1rem;
@@ -982,10 +986,133 @@ body {
     color:var(--color-secondary)
 }
 
+.news_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem   ;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.news__post{
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    gap: 1rem;
+}
+
 .footer-info__container{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+}
+
+.news__image{
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.news__link-image{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.news__link-image:hover{
+    transform: scale(1.1);
+}
+
+.news__detail{
+    width: 75%;
+}
+
+.news__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.news__link__title{
+    color: var(--colot-titles);
+    transition: all 300ms ease-in-out;
+}
+
+.news__link__title:hover{
+    color: var(--color-secondary);
+}
+
+.news__data{
+    justify-content: left;
+    grid-area: 1rem;
+}
+
+/* Seccion juegos */
+.main_games{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.games__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem   ;
+}
+
+.games__game{
+    position: relative;
+    flex-basis: calc(50%-1.5rem);
+}
+
+.game__container-image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.game__link-image{
+    transition: all 300ms ease-in-out;
+
+}
+.game__link-image:hover{
+
+    transform: scale(1.1);
+}
+
+.game__rating{
+    width: 4rem;;
+    height: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 9;
+}
+
+
+.game__details{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    padding-right: 5rem;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.game__title{
+    font-size: 2rem;
+    text-transform:uppercase;
+
+}
+
+.game__link-title:hover {
+    text-shadow: 0 0 5px black;
+}
+
+.game__link-title{
+    color: var(--color-principal);
+    transition: 300ms all ease;
 }
 
 /* Estilos barra lateral aside */
