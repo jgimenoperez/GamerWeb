@@ -9,6 +9,12 @@
     --color-bg-marquee:#EEEEEE;
     --color-text-marquee:#7c7c7c ;
     --colot-titles:#333333;
+    --color-bg-aside:#F5F5F5;
+    --color-tweeter:#2FC2EF;
+    --color-facebook:#4C66A4;
+    --color-instagram:#EA4C89;
+    --color-youtube:#CC181E;
+    --color-linkedin:#F4A62A;
 
 }
 
@@ -1166,18 +1172,166 @@ body {
 .list-header--small{
     color: var(--color-principal);
     margin-left: 5px;
-    /* color: var(--color-principal);
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    
-    white-space: no-wrap;
-    font-weight: 400; */
 }
 
-
-/* Estilos barra lateral aside */
+/* barra lateral aside */
 .layout__aside {
     grid-area:aside;
+    background-color: var(--color-bg-aside);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.login__container{
+    width: 100%;
+}
+
+.form__container-username,
+.form__container-remember,
+.form__container-username{
+    width: 100%;
+    margin: 1rem 0;
 }
 
 
+.form__imput{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.10);
+    padding: 0.5rem;
+}
+
+.form_label{
+    font-weight: 500;
+
+}
+
+.form__container-remember .form__imput {
+    width: auto;
+    display: inline
+}
+
+.form__container-remember .form_label {
+    width: auto;
+    display: inline
+}
+
+.form_submit{
+    width: 100%;
+    height: 3.7rem;
+    background-color: var(--color-secondary);
+    color: var( --color-principal);
+    border: 1px solid rgba(0,0,0,0.10);
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.login__regi,
+.login__lost-pass{
+    display: block;
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+.aside__social{
+    display: flex;
+    flex-direction: row;
+    color: var( --color-principal);
+}
+
+.social__list {
+    width: 100%;
+}
+
+.social__item{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    color: var(--color-principal);
+    transition: all 300ms ease;
+   
+}
+
+.social__item--blue{
+    background-color: var(--color-tweeter);
+}
+.social__item--yellow{
+    background-color: var(--color-linkedin);
+}
+.social__item--bluedark{
+    background-color: var(--color-facebook);
+}
+.social__item--pink{
+    background-color: var(--color-youtube);
+}
+.social__item--red{
+    background-color: var(--color-instagram);
+}
+
+.social__item:hover{
+    padding-left: 3rem;
+}
+
+.social__link{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-principal);
+}
+
+.social__icon{
+    margin-right: 1rem;
+}
+
+.fa-brands{
+    font-size:3.2rem;
+}
+
+.social__number{
+    font-size:1.8rem;
+    line-height: 1;
+}
+
+.social__word{
+    font-size:1.3rem;
+    line-height: 1;
+    opacity: 0.75;
+}
+
+.social__icon > .fa-brands{
+    font-size: 3.6rem;
+   margin-right: 1.5rem;
+}
+
+.aside__tweets{
+    background-color: var(--color-tweeter);
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    padding: 1.3rem;
+}
+
+.tweets__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tweets__header .fa-brands{
+    margin-right: 1rem;
+}
+
+.tweets__content{
+    margin-bottom: 3rem;
+}
+
+.last-reviews__title{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
