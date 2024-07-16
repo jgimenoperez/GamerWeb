@@ -24,6 +24,7 @@ html {
     font-size:10px;
 }
 
+
 body {
     width: 100%;
     height:100%;
@@ -31,6 +32,11 @@ body {
     font-size: 1.6rem;
     background-color: var(--color-principal);
 }
+
+/* .fa-solid{
+    margin-right: 0.5rem; 
+    font-size: 1.2rem;
+ } */
 
 .decoration-bar{
     width: 100%;
@@ -522,7 +528,6 @@ body {
 .subheader__title,
 .list-header__title,
 .last-reviews__link-title
-.list-header__title,
 .last-reviews__title{
     display: inline;
     font-weight: 400;
@@ -600,13 +605,17 @@ body {
 .main-video__autor,
 .main-post__author,
 .news__author,
-.post__author{
+.post__author,
+.recent__author{
     font-weight: 500;
     font-size: 1.1rem;
     text-transform: uppercase;
     color: var(--color-secondary);
 }
 
+.recent__author{
+    width: 70%;
+}
 
 .hightlights__category:hover,
 .game__category:hover,
@@ -668,7 +677,8 @@ body {
 }
 
 .highlights__footer-post,
-.post__footer-post{
+.post__footer-post,
+.recent__meta-info{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
@@ -698,12 +708,21 @@ body {
 .main-video__views,
 .main-video__comments,
 .main-post__views,
-.main-posts{
+.recent__views,
+.recent__comments{
     display: flex;
     flex-direction: row;
+    gap:0.4rem;
     font-weight: 400;
     font-size: 1.1rem;
     columns: var(--color-text-marquee);
+}
+
+.recent__views .fa-eye,
+.recent__comments .fa-comment{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 1rem;
 }
 
 .main-post__number-views{
@@ -726,10 +745,7 @@ body {
     color:var(--color-secondary)
 }
 
-.fa-solid{
-   margin-right: 0.5rem; 
-   font-size: 1.2rem;
-}
+
 
 /* Estilos videos */
 .layout__videos{
@@ -1164,7 +1180,8 @@ body {
     gap: 0.5rem;
 }
 
-.posts_list-header{
+.posts_list-header,
+.recent__list-header{
     display: flex;
     flex-direction: row;
 }
@@ -1334,4 +1351,220 @@ body {
     font-size: 1.2rem;
     text-transform: uppercase;
     display: inline-block;
+}
+
+.aside__recent{
+    margin-bottom: 3rem;
+    
+}
+
+.aside__recent .recent__subheader{
+    /* background-color: blue; */
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+.aside__recent  .recent__list-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+
+}
+
+.aside__recent .list-header__item{
+    /* height: 100%; */
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 0.1rem;
+   
+}
+
+
+.aside__recent .list-header__title{
+    display: block;
+    padding: 0.1rem;
+    font-size: 1.2rem ;
+}
+
+.recent__list-post{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.recent__container-img{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.recent__img{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.recent__img:hover{
+    transform: scale(1.1);
+}
+
+.recent__item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.recent__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recent__link-title{
+    color:var(--color-bg-navar);
+    transition: all 300ms ease-in-out;
+}
+
+.recent__link-title:hover{
+    color:var(--color-secondary)
+}
+
+.recent__container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recent__detail{
+    width: 100%;
+}
+
+.aside__last-reviews{
+    width: 100%;
+    margin-bottom: 3rem ;
+}
+
+.last-reviews__subheader{
+    display: flex;
+}
+
+.posts_read-more{
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid var(--color-bg-navar);
+    text-transform: uppercase;
+    padding: 0.4rem;
+}
+
+/* estilos footer */
+.layout__footer{
+    width: 100%;
+    background-color: var(--color-bg-navar);
+    color: var(--color-principal);
+}
+
+.footer__container{
+    width: 55%;
+    min-width: 100rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.footer__left-container{
+    width: 33%;
+}
+.footer__center-container{
+    width: 33%;
+}
+.footer__right-container{
+    width: 33%;
+}
+
+.footer__about{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.about__title,
+.tags__title,
+.footer__title{
+    margin-bottom: 2rem;
+    color: var(--color-secondaryç);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.about__description{
+    font-size: 1.3rem;
+    color: var(--color-principal);
+}
+
+.tags__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.tags__tag{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color:var(--color-principal);
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: 0.3rem;
+    transition: all 300ms ease-in-out;
+    font-size: 1.3rem;
+}
+
+.tags__tag:hover{
+    background-color: transparent;
+}
+
+.footer__center-container{
+    width: 33%;
+}
+
+.footer__list-popular{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem
+}
+
+.list-popular__item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:1rem
+}
+
+.list-popular__container-info{
+    flex-basis: 75%;
+    font-size: 1.3rem;
+}
+
+.list-popular__title{
+    font-size: 1.5rem;
+}
+
+.footer__description{
+    width: 100%;
+    color: var(--color-principal);
+    padding: 2rem;
+    background-color: #333333;
+}
+
+.footer__text{
+    width: 55%;
+    margin: 0 auto;
 }
