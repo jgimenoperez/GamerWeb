@@ -120,16 +120,23 @@ body {
 
 
 .search__input{
-    display: none;
-    width:20rem;
+    display: block;
+    width:0;
     height:5rem;
     font-size: 1.8rem;
     background-color: var(--color-secondary);
     color:var(--color-principal);   
     outline:none;
     border:none;    
-    transition:all 200ms ease-out;
+    transition:all 500ms ease-out;
 }
+
+.search__input--visible {
+    display: block;
+    width: 200px;
+    background-color: rebeccapurple;
+    transition:all 500ms ease-out;
+  }
 
 .search__input::placeholder{
     color: var(--color-principal);
