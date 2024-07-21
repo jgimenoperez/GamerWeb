@@ -4,6 +4,22 @@ document.addEventListener("DOMContentLoaded",(evet)=>{
     let btn_search = document.querySelector(".navbar__btn-search")
 
 
+    let marquee = (selector, speed)=>{
+        const container = document.querySelector(selector);
+        const list = container.children[0];
+        let i = 0;
+        setInterval(() => {
+            list.style.marginLeft = `-${i}px`;
+
+            if (i > list.clientWidth) {
+                i = 0;
+            }
+            i = i + speed
+
+        }, 0);
+    }
+    marquee(".marquee_container",0.2);
+
     btn_search.addEventListener("click",()=>{
         console.log(1)
         input_search.classList.contains("search__input--visible")
@@ -30,6 +46,8 @@ document.addEventListener("DOMContentLoaded",(evet)=>{
         // input_search.style.padding="0";
         // input_search.classList.remove("visible")
     })
+
+
 
 })
 
