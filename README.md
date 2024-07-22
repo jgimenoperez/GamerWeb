@@ -28,5 +28,5 @@ Portfolio web.
 3. Lanzar proyecto por ejemplo desde vscode con liveserver
 
 
-.[!NOTE].
+[!NOTE]
 Este sitio web es un ejemplo de portfolio creado con fines demostrativos. La información contenida en este proyecto puede no ser correcta o estar desactualizada. Los enlaces proporcionados dentro del sitio web no están activos y no conducen a recursos reales. Por favor, ten en cuenta estas limitaciones al revisar este proyecto.
