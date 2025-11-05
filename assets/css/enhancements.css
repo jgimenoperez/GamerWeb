@@ -1,0 +1,379 @@
+/* ==========================================
+   MEJORAS VISUALES - GamerWeb
+   Autor: Claude AI Assistant
+   Descripción: Efectos modernos y animaciones
+   ========================================== */
+
+/* Animaciones globales */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Efectos de hover mejorados para tarjetas de juegos */
+.games__game {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.games__game::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: left 0.5s;
+    z-index: 1;
+}
+
+.games__game:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.games__game:hover::before {
+    left: 100%;
+}
+
+.game__img {
+    transition: transform 0.5s ease;
+}
+
+.games__game:hover .game__img {
+    transform: scale(1.1);
+}
+
+/* Efectos para el carrusel */
+.carousel__item {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.carousel__item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.carousel__item:hover .carousel__img {
+    filter: brightness(1.1);
+}
+
+/* Efectos para posts destacados */
+.highlights__post,
+.posts__post {
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.highlights__post:hover,
+.posts__post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.highlights__img,
+.post__img {
+    transition: all 0.4s ease;
+}
+
+.highlights__post:hover .highlights__img,
+.posts__post:hover .post__img {
+    transform: scale(1.08);
+    filter: brightness(1.1) contrast(1.05);
+}
+
+/* Efectos para botones */
+.read-more__bten,
+.post__btn-read-more,
+.main-post__btn,
+.posts_read-more {
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.read-more__bten::before,
+.post__btn-read-more::before,
+.main-post__btn::before,
+.posts_read-more::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.read-more__bten:hover::before,
+.post__btn-read-more:hover::before,
+.main-post__btn:hover::before,
+.posts_read-more:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.read-more__bten:hover,
+.post__btn-read-more:hover,
+.main-post__btn:hover,
+.posts_read-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos para rating circles */
+.rating__circle {
+    transition: all 0.3s ease;
+}
+
+.games__game:hover .rating__circle,
+.slider__container:hover .rating__circle,
+.carousel__item:hover .rating__circle {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.rating__mark,
+.circle_mark {
+    transition: all 0.3s ease;
+}
+
+.games__game:hover .rating__mark,
+.slider__container:hover .rating__mark,
+.carousel__item:hover .circle_mark {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Efectos para el slider principal */
+.slider__container {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    transition: height 0.4s ease;
+}
+
+.slider__container:hover::after {
+    height: 100%;
+}
+
+.slider__container:hover {
+    transform: scale(1.02);
+}
+
+.slider__img {
+    transition: all 0.5s ease;
+}
+
+.slider__container:hover .slider__img {
+    transform: scale(1.1);
+    filter: brightness(1.15);
+}
+
+/* Efectos para el menú de navegación */
+.navbar__link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar__link:hover::after {
+    width: 100%;
+}
+
+/* Efectos para las redes sociales */
+.social__item {
+    transition: all 0.3s ease;
+}
+
+.social__item:hover {
+    transform: translateX(10px);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social__icon {
+    transition: all 0.4s ease;
+}
+
+.social__item:hover .social__icon {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* Efectos para las noticias */
+.news__post {
+    transition: all 0.3s ease;
+}
+
+.news__post:hover {
+    transform: translateX(5px);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Animación de loading para imágenes */
+.carousel__img,
+.slider__img,
+.game__img,
+.highlights__img,
+.post__img,
+.news__img {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.05) 25%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.05) 75%
+    );
+    background-size: 200% 100%;
+}
+
+/* Efecto de carga suave */
+img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Scroll suave para toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Efectos para el formulario de login */
+.form__imput {
+    transition: all 0.3s ease;
+}
+
+.form__imput:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.form_submit {
+    transition: all 0.3s ease;
+}
+
+.form_submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form_submit:active {
+    transform: translateY(0);
+}
+
+/* Efectos para la marquesina */
+.marquee__link {
+    transition: all 0.3s ease;
+}
+
+.marquee__link:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Animación de entrada para secciones */
+.layout__higlights,
+.layout__videos,
+.layout__carousel-games,
+.layout__main {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Efecto de hover para videos */
+.videos__item {
+    transition: all 0.3s ease;
+}
+
+.videos__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Efectos para el footer */
+.footer__tags .tags__tag {
+    transition: all 0.3s ease;
+}
+
+.footer__tags .tags__tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive: reducir animaciones en dispositivos móviles */
+@media (max-width: 768px) {
+    .games__game:hover,
+    .carousel__item:hover,
+    .slider__container:hover {
+        transform: none;
+    }
+
+    .games__game:hover .game__img,
+    .slider__container:hover .slider__img {
+        transform: scale(1.05);
+    }
+}
+
+/* Accesibilidad: respetar preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
